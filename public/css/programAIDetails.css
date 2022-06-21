@@ -1,0 +1,117 @@
+.aiDetails .container {
+  position: relative;
+  z-index: 10;
+}
+
+.aiDetails .content {
+  padding: 25px 25px 25px 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: white;
+}
+
+video {
+  height: 45%;
+  width: 100%;
+}
+
+#demo {
+  font-size: 30px !important;
+  color: white;
+}
+
+.word {
+  color: white;
+  font-size: 15px;
+}
+
+.aiDetails .content p {
+  margin-bottom: 30px;
+}
+
+.ai-btn {
+  padding: 8px 30px 9px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e03a3c;
+}
+
+.ai-btn i {
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.aiDetails .content .ai-btn:hover {
+  background: #e35052;
+  background: #e03a3c;
+}
+
+.aiDetails .icon-boxes {
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .aiDetails .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .aiDetails {
+    text-align: center;
+  }
+}
+
+/* .ai-camera-area {
+  background-color: orangered;
+} */
+.sub-title {
+  color: orangered;
+  font-size: 20px;
+}
+
+.red-box {
+  background-color: orangered;
+  border-radius: 1rem;
+  margin-bottom: 15px;
+}
+
+#action-times {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+#calorie-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+/* Hide AI Red Camera */
+/* .output_canvas {
+  display: none;
+} */
+/* .input_video {
+  display: block;
+  width: 80%;
+  height: 100%;
+  transform: scaleX(-100%);
+  z-index: 4;
+} */
+
+.output_canvas {
+  width: 100%;
+  height: 80%;
+}

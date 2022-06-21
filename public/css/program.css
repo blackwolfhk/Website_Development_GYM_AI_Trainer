@@ -1,0 +1,97 @@
+/* .container {
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  margin: 200px auto;
+  background: #000;
+} */
+
+.container .box {
+  position: relative;
+  text-align: center;
+  /* width: calc(500px - 60px); */
+  height: calc(600px - 60px);
+  background: transparent;
+  float: left;
+  margin: 60px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.container .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg1 {
+  background-image: url(../photos/program-workout-photo.png);
+}
+.bg2 {
+  background-image: url(../photos/program-ai-photo.png);
+}
+
+.container .box .icon img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: orangered;
+}
+
+.container .overlay:hover {
+  opacity: 1;
+}
+
+.container .box .text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.more-margin {
+  margin-top: 30rem;
+}
+
+@media (max-width: 576px) {
+  .row {
+    margin-top: 15rem;
+  }
+
+  .container .box {
+    width: 45rem;
+  }
+
+  .container .box .icon {
+    width: 45rem;
+  }
+  .overlay {
+    width: 45rem;
+  }
+  .container .box .icon img {
+    width: 100%;
+  }
+}

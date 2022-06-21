@@ -1,0 +1,42 @@
+body {
+  color: white;
+}
+h1 {
+  margin-top: 3.5rem;
+  margin-bottom: 4rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+}
+h3 {
+  color: orangered;
+}
+.classDetails .image {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.classDetails .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.classDetails .content ul {
+  list-style: none;
+  padding: 0;
+}
+.classDetails .content ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.classDetails .content ul i {
+  font-size: 24px;
+  padding: 2px 6px 0 0;
+  color: #7cc576;
+}
+.classDetails .content p:last-child {
+  margin-bottom: 0;
+}
+.classDetailsAns {
+  color: white;
+  font-size: 22px;
+}

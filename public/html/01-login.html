@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!-- bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- header section starts -->
+  <header class="header">
+
+    <div href="index.html" class="logo">
+      <div class="brand-img-container">
+        <a class="navbar-brand m-0" href="index.html">
+          <img src="photos/YGIG-logo-white.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <a href="index.html#home">home</a>
+      <a href="index.html#about">about</a>
+      <a href="index.html#trainers">trainers</a>
+      <a href="index.html#programs">programs</a>
+      <a href="index.html#pricing">body analysis</a>
+      <a href="index.html#blogs">blogs</a>
+      <a id="login-button" href="/01-login.html">login</a>
+    </nav>
+  </header>
+  <!-- header section ends -->
+
+  <!-- Register & Login section starts -->
+  <section>
+    <div class="row login container d-flex">
+      <!-- register section starts -->
+      <div class="col-md-6 p-3 pe-3">
+        <h1 class="h1 loginFont">Register</h1>
+        <form method="post" autocomplete="on" id="signup-form">
+
+          <!-- Username -->
+          <div class="box">
+            <label for="username" class="fl fontLabel"> username: </label>
+            <div class="new iconBox">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="fr">
+              <input type="text" name="username" placeholder="username" class="textBox" autofocus="on" required>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!-- Username ended -->
+
+          <!-- Password -->
+          <div class="box">
+            <label for="password" class="fl fontLabel"> Password: </label>
+            <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+            <div class="fr">
+              <input type="password" required name="password" placeholder="password" class="textBox">
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!-- Password ended -->
+
+          <!-- Mobile No.-->
+          <div class="box">
+            <label for="mobileNO" class="fl fontLabel"> Mobile No.: </label>
+            <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+            <div class="fr">
+              <input type="text" required name="mobileNO" maxlength="10" placeholder="Mobile NO." class="textBox">
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!-- Mobile No. ended -->
+
+          <!-- Email -->
+          <div class="box">
+            <label for="email" class="fl fontLabel"> Email: </label>
+            <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class="fr">
+              <input type="email" required name="email" placeholder="Email" class="textBox">
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!-- Email ended -->
+
+          <!-- Address -->
+          <div class="box">
+            <label for="address" class="fl fontLabel"> Address: </label>
+            <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class="fr">
+              <input type="text" required name="address" placeholder="Address" class="textBox">
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!-- Address ended -->
+
+          <!---Password------>
+          <div class="box">
+            <label for="age" class="fl fontLabel"> age: </label>
+            <div class="fl iconBox"><i class="" aria-hidden="true"></i></div>
+            <div class="fr">
+              <input type="number" required name="age" placeholder="age" class="textBox">
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!-- Password ended -->
+
+          <!-- Gender -->
+          <div class="box radio">
+            <label for="gender" class="fl fontLabel"> Gender: </label>
+            <input type="radio" name="Gender" value="Male" required> Male &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="Gender" value="Female" required> Female
+          </div>
+          <!-- Gender ended -->
+
+          <div id="signup-result"></div>
+
+          <!-- Register button -->
+          <div class="box" id="signup-result style=" background: #2d3e3f">
+            <input type="Submit" name="Register" class="submit" value="Register">
+          </div>
+          <!-- Register button ended -->
+
+        </form>
+      </div>
+      <!-- register section ended -->
+
+      <!-- login section starts -->
+      <div class='col-md-6'>
+        <div class="p-3 loginBox">
+          <h1 class="h1 loginFont">Login</h1>
+          <form method="post" autocomplete="on" id="login-form">
+
+            <!-- Username -->
+            <div class="box">
+              <label for="username" class="fl fontLabel"> username: </label>
+              <div class="new iconBox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <div class="fr">
+                <input type="text" name="username" placeholder="username" class="textBox" autofocus="on" required>
+              </div>
+              <div class="clr"></div>
+            </div>
+            <!-- Username ended -->
+
+
+            <!-- Password -->
+            <div class="box">
+              <label for="password" class="fl fontLabel"> Password: </label>
+              <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+              <div class="fr">
+                <input type="password" required name="password" placeholder="password" class="textBox">
+              </div>
+              <div class="clr"></div>
+            </div>
+            <!-- Password ended -->
+
+            <!-- Login button -->
+            <div class="box login-box" style="background: #2d3e3f">
+              <input type="Submit" name="Login" class="submit login-box-style" value="Login">
+            </div>
+            <!-- Login button ended -->
+            <br>
+            <br>
+
+            <!-- Google login button -->
+            <div id="google-login-box">
+              <a href="/connect/google" class="login-with-google-btn">
+                Sign in with Google
+              </a>
+            </div>
+            <!-- Google login button ended -->
+
+          </form>
+        </div>
+        <!-- login section ended -->
+
+      </div>
+  </section>
+  <!-- Register & Login section ended -->
+
+  <script src="../js/loginStyle.js"></script>
+  <script src="../js/signup.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>

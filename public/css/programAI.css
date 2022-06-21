@@ -1,0 +1,25 @@
+/* AI Section */
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+}
+
+.icon-box {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: black;
+  transition: 0.3s;
+  /* width: 460px;
+  height: 390px; */
+}
+
+video {
+  width: 100%;
+  /* height: 100%; */
+}
