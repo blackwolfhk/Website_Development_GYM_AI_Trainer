@@ -19,10 +19,7 @@ import expressSession from "express-session";
 // import {Server as SocketIO} from 'socket.io';
 // import { setSocketIO } from "./utils/socketIO";
 
-
-
 let app = express();
-
 
 app.use(expressSessionMiddleware);
 
@@ -38,18 +35,14 @@ declare module "express-session" {
     interface SessionData {
         user?: any;
         name?: string;
-        username? :string;
+        username?: string;
     }
 }
-
-
 
 dotenv.config();
 
 const knexConfig = require('./knexfile');
 export const knex = Knex(knexConfig[process.env.NODE_ENV || "development"]);
-
-
 
 // server handling request from json data
 app.use(express.json());
@@ -71,12 +64,12 @@ const grantExpress = grant.express({
         transport: "session",
         state: true,
     },
-      google: {
+    google: {
         key: env.GOOGLE_CLIENT_ID,
         secret: env.GOOGLE_CLIENT_SECRET,
         scope: ["profile", "email"],
         callback: "/login/google",
-      },
+    },
 });
 
 app.use(grantExpress as express.RequestHandler);
